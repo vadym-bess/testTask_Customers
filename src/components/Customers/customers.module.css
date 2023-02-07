@@ -1,0 +1,120 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.secondaryHeading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #16c098;
+}
+
+.customersList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.tableHeadings {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #b5b7c0;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+
+tbody tr {
+  width: 90%;
+}
+
+.active {
+  /* background-color: rgb(7, 126, 51); */
+}
+
+.inactive {
+  border: 1px solid purple;
+  background-color: rgb(199, 14, 17);
+}
+
+.table {
+  width: auto;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 50%;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: left;
+}
+
+.tableData {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 5;
+  letter-spacing: -0.01em;
+  color: #292d32;
+  width: auto;
+}
