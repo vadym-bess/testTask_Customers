@@ -38,6 +38,16 @@ ul {
   justify-content: center;
 }
 
+.mainHeading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
 .mainLogoImg {
   width: 37px;
   height: 37px;
@@ -107,6 +117,7 @@ ul {
 .buttonsList_item:hover {
   background: #5932ea;
   cursor: pointer;
+  box-shadow: 0px 6px 34px -6px rgba(0, 0, 0, 0.47);
 }
 
 .versionInfo {
@@ -131,7 +142,7 @@ ul {
   gap: 50px;
   flex-direction: column;
   width: 100%;
-  background: #e6eeef;
+  background: #f9fbff;
 }
 
 .innerCustomersThumb {

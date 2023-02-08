@@ -6,6 +6,7 @@ import { CustomersIcon } from '../Images/customersIcon.jsx';
 import { IncomeIcon } from '../Images/incomeIcon.jsx';
 import { PromoteIcon } from 'components/Images/promoteIcon';
 import { HelpIcon } from 'components/Images/helpIcon';
+import { UserImage } from 'components/UserInfo/userInfo';
 
 export const Dashboard = () => {
   return (
@@ -42,6 +43,7 @@ export const Dashboard = () => {
           <span className={css.link}>Help</span>
         </li>
       </ul>
+      <UserImage />
     </div>
   );
 };

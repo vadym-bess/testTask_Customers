@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { Dashboard } from './Dashboard/dashboard';
 import { Customers } from './Customers/customers';
-// import { Pagination } from './Pagination/pagination';
+import { Pagination } from './Pagination/pagination';
 import css from './Dashboard/dashboard.module.css';
 import { CustomersHeading } from './CustomersHeading/customersHeading';
 
@@ -14,10 +14,9 @@ export const App = () => {
 
         <div className={css.innerCustomersThumb}>
           <Customers />
+          <Pagination />
         </div>
       </div>
-
-      {/* <Pagination /> */}
     </div>
   );
 };
