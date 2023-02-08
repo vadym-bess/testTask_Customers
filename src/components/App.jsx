@@ -11,6 +11,7 @@ export const App = () => {
       <Dashboard />
       <div className={css.customersThumb}>
         <CustomersHeading />
+
         <div className={css.innerCustomersThumb}>
           <Customers />
         </div>

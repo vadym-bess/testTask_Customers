@@ -67,15 +67,6 @@ tbody tr {
   width: 90%;
 }
 
-.active {
-  /* background-color: rgb(7, 126, 51); */
-}
-
-.inactive {
-  border: 1px solid purple;
-  background-color: rgb(199, 14, 17);
-}
-
 .table {
   width: auto;
   border-collapse: collapse;
@@ -100,8 +91,8 @@ thead th:nth-child(4) {
 
 th,
 td {
-  padding-left: 34px;
-  padding-right: 34px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #eeeeee;
@@ -117,4 +108,34 @@ td {
   letter-spacing: -0.01em;
   color: #292d32;
   width: auto;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 29px;
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  color: #00b087;
+}
+
+.inactive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffc5c5;
+  border: 1px solid #df0404;
+  border-radius: 4px;
+  width: 80px;
+  height: 29px;
+  color: #df0404;
+}
+
+.inputStyling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

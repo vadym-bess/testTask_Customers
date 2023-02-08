@@ -1,5 +1,6 @@
 import css from './customers.module.css';
 import classNames from 'classnames';
+import { InputArea } from '../InputArea/inputArea.jsx';
 
 const customersList = [
   {
@@ -79,8 +80,16 @@ const customersList = [
 export const Customers = () => {
   return (
     <>
-      <h2 className={css.secondaryHeading}>All Customers</h2>
-      <p className={css.description}>Active Members</p>
+      <div className={css.inputStyling}>
+        <div>
+          <h2 className={css.secondaryHeading}>All Customers</h2>
+          <p className={css.description}>Active Members</p>
+        </div>
+        <div className={css.inputArea}>
+          <InputArea />
+        </div>
+      </div>
+
       <tbody className={css.tableBody}>
         <tr className={css.tableHeadings}>
           <th>User Name</th>
@@ -99,8 +108,14 @@ export const Customers = () => {
               <td className={css.tableData}>{number}</td>
               <td className={css.tableData}>{email}</td>
               <td className={css.tableData}>{country}</td>
-              <td className={classNames(css.active, css.tableData)}>
-                {status}
+              <td className={classNames(css.tableData)}>
+                <div className={css.statusInfo}>
+                  {status === 'active' ? (
+                    <div className={classNames(css.active)}>{status}</div>
+                  ) : (
+                    <div className={classNames(css.inactive)}>{status}</div>
+                  )}
+                </div>
               </td>
             </tr>
           );

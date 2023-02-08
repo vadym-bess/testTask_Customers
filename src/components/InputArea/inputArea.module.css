@@ -1,0 +1,17 @@
+.inputArea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #e6eeef;
+  border: transparent;
+  border-radius: 8px;
+  width: 216px;
+  height: 38px;
+  background-color: #e6eeef;
+  padding-left: 5px;
+}
+
+.inputArea:empty:not(:focus):before {
+  content: attr(data-text);
+  color: #999999;
+}
