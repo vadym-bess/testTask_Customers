@@ -6,6 +6,12 @@
   margin-top: 550px;
 }
 
+@media (max-width: 1300px) {
+  .userInfo {
+    display: none;
+  }
+}
+
 .userPhoto {
   background-image: url(../Images/userImage.jpeg);
   width: 50px;

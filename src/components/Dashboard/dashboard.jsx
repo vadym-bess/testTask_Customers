@@ -15,6 +15,11 @@ export const Dashboard = () => {
         <MainLogo />
         <h1 className={css.mainHeading}>
           Dashboard<span className={css.versionInfo}>v.01</span>
+          <div className={css.burgerMenuThumb}>
+            <div className={css.burgerMenuThumb__item}></div>
+            <div className={css.burgerMenuThumb__item}></div>
+            <div className={css.burgerMenuThumb__item}></div>
+          </div>
         </h1>
       </div>
       <ul className={css.buttonsList}>

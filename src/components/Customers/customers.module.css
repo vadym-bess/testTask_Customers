@@ -36,6 +36,12 @@ ul {
   margin-left: 35px;
 }
 
+@media (max-width: 700px) {
+  .secondaryHeading {
+    margin-left: 0;
+  }
+}
+
 .description {
   font-family: 'Poppins';
   font-style: normal;
@@ -45,6 +51,12 @@ ul {
   letter-spacing: -0.01em;
   color: #16c098;
   margin-left: 35px;
+}
+
+@media (max-width: 700px) {
+  .description {
+    margin-left: 0;
+  }
 }
 
 .customersList {
@@ -65,14 +77,16 @@ ul {
   border-collapse: collapse;
 }
 
-tbody tr {
-  width: 90%;
+@media (max-width: 700px) {
+  .tableHeadings {
+    font-size: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .table {
   width: auto;
-  border-collapse: collapse;
-  border: 3px solid purple;
 }
 
 thead th:nth-child(1) {
@@ -101,15 +115,81 @@ td {
   text-align: left;
 }
 
+@media (max-width: 700px) {
+  th,
+  td {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+@media (min-width: 450px) {
+  th,
+  td {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 550px) {
+  th,
+  td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 650px) {
+  th,
+  td {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 750px) {
+  th,
+  td {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 901px) {
+  th,
+  td {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 .tableData {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 5;
+  line-height: 1.5;
   letter-spacing: -0.01em;
   color: #292d32;
   width: auto;
+}
+
+@media (max-width: 700px) {
+  .tableData {
+    font-size: 8px;
+  }
 }
 
 .active {
@@ -124,6 +204,13 @@ td {
   color: #00b087;
 }
 
+@media (max-width: 700px) {
+  .active {
+    width: 40px;
+    height: 20px;
+  }
+}
+
 .inactive {
   display: flex;
   align-items: center;
@@ -136,8 +223,23 @@ td {
   color: #df0404;
 }
 
+@media (max-width: 700px) {
+  .inactive {
+    width: 40px;
+    height: 20px;
+  }
+}
+
 .inputStyling {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 700px) {
+  .inputStyling {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
