@@ -82,6 +82,7 @@ ul {
   background-color: black;
   margin-top: 6px;
   margin-left: 140px;
+  cursor: pointer;
 }
 
 @media (min-width: 1299px) {
