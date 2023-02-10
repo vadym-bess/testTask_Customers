@@ -11,7 +11,7 @@ import { UserImage } from 'components/UserInfo/userInfo';
 import { Modal } from 'components/Modal/modal';
 
 export const Dashboard = () => {
-  const [modalActive, setModalActive] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
 
   return (
     <div className={css.layout}>
